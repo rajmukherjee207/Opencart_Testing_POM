@@ -11,14 +11,13 @@ Before running the tests, ensure you have the following installed:
 - **ChromeDriver**: [Download ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) and place it in a directory included in your PATH.
 
 ## Project Structure
-
-    pageObjects/: Contains page classes with locators and methods for interacting with the web elements.
-        AccountRegistrationPage.java: Page object for the account registration page.
-        HomePage.java: Page object for the home page.
-    testBase/: Contains the base class for setting up and tearing down the test environment.
-        BaseClass.java: Initializes WebDriver, sets up the browser, and provides utility methods for generating random data.
-    testCases/: Contains test cases for the project.
-        TC_001_AccountRegistrationTest.java: Test case for verifying account registration functionality.
+pageObjects/: Contains page classes with locators and methods for interacting with the web elements.
+AccountRegistrationPage.java: Page object for the account registration page.
+HomePage.java: Page object for the home page.
+testBase/: Contains the base class for setting up and tearing down the test environment.
+BaseClass.java: Initializes WebDriver, sets up the browser, and provides utility methods for generating random data.
+testCases/: Contains test cases for the project.
+TC_001_AccountRegistrationTest.java: Test case for verifying account registration functionality.
 
 Setup
 
@@ -36,10 +35,10 @@ cd your-repository
 
 Features
 
-    Automated account registration with random data generation.
-    Validation of successful account creation with assertion of confirmation message.
+Automated account registration with random data generation.
+Validation of successful account creation with assertion of confirmation message.
 
-    /your-repository
+/your-repository
 │
 ├── /src
 │   ├── /test
