@@ -38,6 +38,7 @@ Features
 Automated account registration with random data generation.
 Validation of successful account creation with assertion of confirmation message.
 
+'''
 /your-repository
 │
 ├── /src
@@ -60,3 +61,4 @@ Validation of successful account creation with assertion of confirmation message
 ├── pom.xml
 └── README.md
 
+'''
