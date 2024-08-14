@@ -1,7 +1,7 @@
-# OpenCart Testing POM
+# Automated Account Registration Test
+Overview
 
-This repository contains test automation scripts for OpenCart using the Page Object Model (POM) design pattern. The tests are implemented using Selenium WebDriver.
-
+This project contains an automated test suite for account registration on an e-commerce website using Selenium WebDriver and TestNG. It demonstrates the use of page object model design patterns and utility methods for generating random data.
 ## Prerequisites
 
 Before running the tests, ensure you have the following installed:
@@ -10,49 +10,54 @@ Before running the tests, ensure you have the following installed:
 - **Maven**: [Download and install Maven](https://maven.apache.org/download.cgi)
 - **ChromeDriver**: [Download ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) and place it in a directory included in your PATH.
 
-## Project Setup
+## Project Structure
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/rajmukherjee207/Opencart_Testing_POM.git
-   cd Opencart_Testing_POM
-'''
+    pageObjects/: Contains page classes with locators and methods for interacting with the web elements.
+        AccountRegistrationPage.java: Page object for the account registration page.
+        HomePage.java: Page object for the home page.
+    testBase/: Contains the base class for setting up and tearing down the test environment.
+        BaseClass.java: Initializes WebDriver, sets up the browser, and provides utility methods for generating random data.
+    testCases/: Contains test cases for the project.
+        TC_001_AccountRegistrationTest.java: Test case for verifying account registration functionality.
 
-Install Dependencies:
+Setup
 
-    Navigate to the project directory and run:
-
-    bash
-
-        mvn install
-
-Running Tests
-
-    Navigate to the Project Directory:
+    Clone the repository:
 
     bash
 
-cd Opencart_Testing_POM
+git clone https://github.com/your-username/your-repository.git
 
-Run the Tests:
+Navigate to the project directory:
 
-    To execute the test cases, use Maven:
+bash
 
-    bash
-        mvn test
+cd your-repository
 
-Basic Login Test
+Features
 
-The LoginTest class contains a simple test for logging into an OpenCart application. Here is a brief overview of the test:
+    Automated account registration with random data generation.
+    Validation of successful account creation with assertion of confirmation message.
 
-    Navigate to the Login Page:
-    The test opens the OpenCart login page.
+    /your-repository
+│
+├── /src
+│   ├── /test
+│   │   ├── /java
+│   │   │   └── /pageObjects
+│   │   │       ├── AccountRegistrationPage.java
+│   │   │       └── HomePage.java
+│   │   │       └── BaseClass.java
+│   │   │   └── /testBase
+│   │   │       └── BaseClass.java
+│   │   │   └── /testCases
+│   │   │       └── TC_001_AccountRegistrationTest.java
+│   │   │   └── /utility
+│   │
+│   ├── /resources
+│
+├── /target
+│
+├── pom.xml
+└── README.md
 
-    Enter Credentials:
-    The test fills in the username and password fields.
-
-    Submit Login Form:
-    The test clicks the login button.
-
-    Verify Login:
-    The test checks if the login was successful by verifying the presence of an element that appears only after a successful login.
