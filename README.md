@@ -40,7 +40,7 @@ Validation of successful account creation with assertion of confirmation message
 
 ```bash
 mvn test
-/your-repository
+/OpencartV1
 │
 ├── /src
 │   ├── /test
